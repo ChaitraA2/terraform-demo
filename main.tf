@@ -1,13 +1,13 @@
 resource "aws_instance" "my_instance" {
-	ami = "ami_value"
-	count = 1
-	instance_type = "t2.nano"
+	ami = var.instance_ami
+	count = var.instance_count
+	instance_type = var.instance_type
  }
 
 resource "aws_instance" "my_instance1" {
-	ami = "ami_value"
-	count = 1
-	instance_type = "t2.nano"
+	ami = var.instance_ami
+	count = var.instance_count
+	instance_type = var.instance_type
 }
 
 Resource "aws_vpc" "my_vpc" {
