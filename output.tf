@@ -1,4 +1,4 @@
-output "instance_ip_addr"
+output "instance_ip_addr" {
 	value = aws_instance.my_instance[*].private_ip
 }
 
