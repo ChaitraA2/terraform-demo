@@ -10,6 +10,6 @@ resource "aws_instance" "my_instance" {
 //	instance_type = var.instance_type
 //}
 
-Resource "aws_vpc" "my_vpc" {
+resource "aws_vpc" "my_vpc" {
 	cidr_block = "10.0.0.0/16"
 }
