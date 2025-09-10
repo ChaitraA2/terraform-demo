@@ -55,5 +55,5 @@ pipeline {
         sh 'terraform apply --auto-approve'
       }
     }
-        
+  }
     
